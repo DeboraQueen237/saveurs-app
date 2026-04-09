@@ -1,1 +1,304 @@
- 
+ /* =============================================
+   SAVEURS APP — Styles Globaux
+   Fichier : assets/css/main.css
+   Codé par : Personne 1
+   ⚠️ Ce fichier est utilisé par toute l'équipe
+   ============================================= */
+
+
+/* ─────────────────────────────────────────────
+   1. VARIABLES CSS (Thème clair par défaut)
+───────────────────────────────────────────── */
+:root {
+  /* Couleurs principales */
+  --orange:       #F97316;
+  --orange-light: #FFF7ED;
+  --orange-dark:  #EA6C0A;
+  --red:          #EF4444;
+  --green:        #10B981;
+  --yellow:       #F59E0B;
+  --purple:       #8B5CF6;
+  --blue:         #6366F1;
+
+  /* Fond et surfaces */
+  --bg:           #FAFAF8;
+  --bg-secondary: #F5F5F3;
+  --card:         #FFFFFF;
+  --card-hover:   #FEFEFE;
+
+  /* Texte */
+  --text:         #1C1917;
+  --text-sub:     #78716C;
+  --text-muted:   #A8A29E;
+
+  /* Bordures */
+  --border:       #E7E5E4;
+  --border-light: #F0EFED;
+
+  /* Navbar */
+  --navbar-bg:    #FFFFFF;
+  --navbar-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+
+  /* Ombres */
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md:    0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg:    0 16px 40px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition:   all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+
+  /* Rayons */
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    20px;
+  --radius-full:  100px;
+
+  /* Typographie */
+  --font-body:    'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+
+/* ─────────────────────────────────────────────
+   2. THÈME SOMBRE
+   Activé par : body.dark (géré par theme.js)
+───────────────────────────────────────────── */
+body.dark {
+  --bg:           #0F0F0F;
+  --bg-secondary: #181818;
+  --card:         #1A1A1A;
+  --card-hover:   #222222;
+
+  --text:         #F5F5F0;
+  --text-sub:     #A8A29E;
+  --text-muted:   #6B6663;
+
+  --border:       #2A2A2A;
+  --border-light: #222222;
+
+  --navbar-bg:    #141414;
+  --navbar-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+
+  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md:    0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg:    0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ─────────────────────────────────────────────
+   3. RESET & BASE
+───────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+input {
+  font-family: var(--font-body);
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ─────────────────────────────────────────────
+   4. CONTENEUR PRINCIPAL
+───────────────────────────────────────────── */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+/* ─────────────────────────────────────────────
+   5. UTILITAIRES BADGES
+───────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Badge difficulté */
+.badge-facile    { background: #ECFDF5; color: #059669; border: 1px solid #A7F3D0; }
+.badge-moyen     { background: #FFFBEB; color: #D97706; border: 1px solid #FDE68A; }
+.badge-difficile { background: #FEF2F2; color: #DC2626; border: 1px solid #FECACA; }
+
+/* Badge catégorie — couleur dynamique via style inline */
+.badge-category {
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* ─────────────────────────────────────────────
+   6. ÉTOILES / RATING
+───────────────────────────────────────────── */
+.stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--yellow);
+}
+
+.stars-value {
+  color: var(--text-sub);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* ─────────────────────────────────────────────
+   7. FOOTER
+───────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--border);
+  margin-top: 80px;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--text-sub);
+  font-size: 13px;
+  line-height: 1.8;
+  transition: var(--transition);
+}
+
+.footer strong {
+  color: var(--text);
+}
+
+
+/* ─────────────────────────────────────────────
+   8. PAGES (affichage/masquage)
+───────────────────────────────────────────── */
+#pageHome {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+#pageDetail {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+#pageDetail.active {
+  display: block;
+}
+
+
+/* ─────────────────────────────────────────────
+   9. ANIMATIONS GLOBALES
+───────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.05); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+/* ─────────────────────────────────────────────
+   10. SCROLLBAR PERSONNALISÉE
+───────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+
+
+/* ─────────────────────────────────────────────
+  11. RESPONSIVE — Points de rupture
+───────────────────────────────────────────── */
+
+/* Tablette */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding: 24px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+}

@@ -1,1 +1,474 @@
- 
+ /* =============================================
+   SAVEURS APP — Navbar & Hero
+   Fichier : assets/css/navbar.css
+   Codé par : Personne 1
+   ============================================= */
+
+
+/* ─────────────────────────────────────────────
+   1. NAVBAR
+───────────────────────────────────────────── */
+.navbar {
+  background: var(--navbar-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--navbar-shadow);
+  transition: var(--transition);
+}
+
+
+/* ── Logo ── */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-logo:hover .logo-title {
+  color: var(--orange);
+}
+
+.logo-icon {
+  font-size: 30px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover .logo-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.logo-sub {
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+
+/* ── Actions navbar ── */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bouton Favoris */
+.btn-favoris {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  border-radius: var(--radius-sm);
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.btn-favoris:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: #FEF2F2;
+}
+
+.btn-favoris.active {
+  background: #FEF2F2;
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.fav-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red);
+  color: #FFF;
+  border-radius: var(--radius-full);
+  min-width: 20px;
+  height: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 5px;
+  transition: transform 0.2s ease;
+}
+
+.btn-favoris:hover .fav-count {
+  transform: scale(1.1);
+}
+
+/* Bouton Thème */
+.btn-theme {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.btn-theme:hover {
+  background: var(--bg-secondary);
+  border-color: var(--orange);
+  transform: rotate(15deg);
+}
+
+
+/* ─────────────────────────────────────────────
+   2. HERO SECTION
+───────────────────────────────────────────── */
+.hero-section {
+  max-width: 1100px;
+  margin: 32px auto 0;
+  padding: 0 24px;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, #F97316 0%, #EF4444 100%);
+  border-radius: var(--radius-xl);
+  padding: 52px 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Décoration fond */
+.hero-deco {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  font-size: 160px;
+  opacity: 0.1;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+  transform: rotate(-15deg);
+}
+
+/* Contenu hero */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 580px;
+}
+
+.hero-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.hero-sub {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+
+/* ── Barre de recherche ── */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: var(--radius-md);
+  padding: 0 16px;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
+  height: 52px;
+}
+
+.search-bar:focus-within {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.search-icon {
+  font-size: 16px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.search-bar input {
+  flex: 1;
+  font-size: 14px;
+  color: #1C1917;
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.search-bar input::placeholder {
+  color: #A8A29E;
+}
+
+.btn-clear {
+  background: transparent;
+  border: none;
+  color: #A8A29E;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.btn-clear:hover {
+  background: #F5F5F3;
+  color: #1C1917;
+}
+
+.btn-clear.visible {
+  display: flex;
+}
+
+
+/* ─────────────────────────────────────────────
+   3. STATS BAR
+───────────────────────────────────────────── */
+.stats-section {
+  margin-top: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 4px;
+  font-family: var(--font-display);
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+
+/* ─────────────────────────────────────────────
+   4. FILTRES CATÉGORIES
+───────────────────────────────────────────── */
+.filters-section {
+  margin-top: 24px;
+}
+
+.filters-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text-sub);
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: var(--orange-light);
+}
+
+.filter-btn.active {
+  background: var(--orange);
+  color: #FFFFFF;
+  border-color: var(--orange);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+}
+
+
+/* ─────────────────────────────────────────────
+   5. EN-TÊTE SECTION RECETTES
+───────────────────────────────────────────── */
+.section-header {
+  margin-top: 28px;
+  margin-bottom: 4px;
+}
+
+.section-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+.section-count {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+
+/* ─────────────────────────────────────────────
+   6. RESPONSIVE NAVBAR & HERO
+───────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .logo-title {
+    font-size: 17px;
+  }
+
+  .logo-sub {
+    display: none;
+  }
+
+  .btn-favoris span:first-child {
+    display: none;
+  }
+
+  .hero-section {
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+
+  .hero-card {
+    padding: 36px 28px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+  .hero-deco {
+    font-size: 100px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-header {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-card {
+    padding: 28px 20px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .search-bar {
+    height: 46px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .filters-list {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+}
