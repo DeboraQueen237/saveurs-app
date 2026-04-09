@@ -1,1 +1,157 @@
- 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saveurs — Recettes de Cuisine</title>
+
+  <!-- ===== STYLES ===== -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/cards.css" />
+  <link rel="stylesheet" href="assets/css/detail.css" />
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ================================================ -->
+  <!-- NAVBAR                                           -->
+  <!-- Codée par : Personne 1                          -->
+  <!-- ================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-logo" id="logoBtn">
+      <span class="logo-icon">🍳</span>
+      <div class="logo-text">
+        <span class="logo-title">Saveurs</span>
+        <span class="logo-sub">CUISINE DU MONDE</span>
+      </div>
+    </div>
+
+    <div class="navbar-actions">
+      <button class="btn-favoris" id="btnFavoris">
+        ❤️ Favoris <span class="fav-count" id="favCount">0</span>
+      </button>
+      <button class="btn-theme" id="btnTheme">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ================================================ -->
+  <!-- PAGE ACCUEIL                                     -->
+  <!-- ================================================ -->
+  <div id="pageHome">
+
+    <!-- HERO — Personne 1 -->
+    <section class="hero-section">
+      <div class="hero-card">
+
+        <!-- Décoration fond -->
+        <div class="hero-deco">🍳</div>
+
+        <div class="hero-content">
+          <p class="hero-label">✦ DÉCOUVREZ &amp; CUISINEZ</p>
+          <h1 class="hero-title">
+            Des recettes pour<br />chaque occasion
+          </h1>
+          <p class="hero-sub" id="heroSub">
+            35 recettes • 8 catégories • Résultats délicieux
+          </p>
+
+          <!-- Barre de recherche -->
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Chercher une recette, ingrédient..."
+              autocomplete="off"
+            />
+            <button class="btn-clear" id="btnClear">✕</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STATS BAR — Personne 2 -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid" id="statsGrid">
+          <!-- Générée par search.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTRES — Personne 2 -->
+    <section class="filters-section">
+      <div class="container">
+        <div class="filters-list" id="filtersList">
+          <!-- Générée par search.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EN-TÊTE SECTION RECETTES — Personne 2 -->
+    <section class="section-header">
+      <div class="container">
+        <h2 class="section-title" id="sectionTitle">Toutes les recettes</h2>
+        <span class="section-count" id="recipeCount"></span>
+      </div>
+    </section>
+
+    <!-- GRILLE RECETTES — Personne 2 -->
+    <section class="recipes-section">
+      <div class="container">
+        <div class="recipes-grid" id="recipesGrid">
+          <!-- Générée par search.js -->
+        </div>
+
+        <!-- État vide -->
+        <div class="empty-state" id="emptyState">
+          <span class="empty-icon">🥺</span>
+          <p class="empty-text">Aucune recette trouvée</p>
+          <p class="empty-sub">Essayez un autre mot-clé ou une autre catégorie</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- fin #pageHome -->
+
+
+  <!-- ================================================ -->
+  <!-- PAGE DÉTAIL                                       -->
+  <!-- Codée par : Personne 3                           -->
+  <!-- ================================================ -->
+  <div id="pageDetail">
+    <!-- Contenu injecté dynamiquement par detail.js -->
+  </div>
+
+
+  <!-- ================================================ -->
+  <!-- FOOTER                                           -->
+  <!-- ================================================ -->
+  <footer class="footer">
+    <p>
+      🍳 <strong>Saveurs</strong> — Application de Recettes de Cuisine
+      <br />
+      <span>Fait avec ❤️ par le Groupe 3 de B1A KEYCE INFORMATIQUE</span>
+    </p>
+  </footer>
+
+
+  <!-- ================================================ -->
+  <!-- SCRIPTS                                          -->
+  <!-- ⚠️ Respecter cet ordre                          -->
+  <!-- ================================================ -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/favorites.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/detail.js"></script>
+
+</body>
+</html>
