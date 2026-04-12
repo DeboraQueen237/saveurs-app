@@ -157,7 +157,8 @@
 }
 
 .hero-card {
-  background: linear-gradient(135deg, #F97316 0%, #EF4444 100%);
+  /* Après ✅ — suit le thème choisi */
+  background: linear-gradient(135deg, var(--orange) 0%, var(--red) 100%);
   border-radius: var(--radius-xl);
   padding: 52px 44px;
   position: relative;

@@ -1,0 +1,228 @@
+/* =============================================
+   SAVEURS APP — Styles Commentaires
+   Fichier : assets/css/comments.css
+   Codé par : Personne 3
+   ============================================= */
+
+
+/* ─────────────────────────────────────────────
+   1. SECTION GLOBALE
+───────────────────────────────────────────── */
+.comments-section {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.comments-section-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+
+/* ─────────────────────────────────────────────
+   2. FORMULAIRE
+───────────────────────────────────────────── */
+.comment-form {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  margin-bottom: 24px;
+}
+
+.comment-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+/* Étoiles */
+.comment-form-stars {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.comment-form-star {
+  font-size: 26px;
+  color: var(--border);
+  cursor: pointer;
+  transition: color 0.15s, transform 0.1s;
+  line-height: 1;
+}
+
+.comment-form-star.active,
+.comment-form-star:hover {
+  color: var(--yellow);
+  transform: scale(1.2);
+}
+
+.comment-stars-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* Champs texte */
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+  font-family: var(--font-body);
+  margin-bottom: 10px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.comment-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Bouton envoyer */
+.comment-submit-btn {
+  background: var(--orange);
+  color: #FFF;
+  border: none;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.comment-submit-btn:hover:not(:disabled) {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.comment-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Message de statut */
+.comment-status {
+  margin-top: 8px;
+  font-size: 13px;
+  min-height: 18px;
+  display: block;
+}
+
+.comment-status--success { color: #059669; }
+.comment-status--error   { color: #DC2626; }
+.comment-status--warning { color: #D97706; }
+
+
+/* ─────────────────────────────────────────────
+   3. LISTE DES COMMENTAIRES
+───────────────────────────────────────────── */
+.comments-empty {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 16px 0;
+}
+
+.comment-card {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--orange);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: var(--bg-secondary);
+  transition: var(--transition-fast);
+  animation: fadeIn 0.25s ease;
+}
+
+.comment-card:last-child { margin-bottom: 0; }
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.comment-author {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.comment-stars {
+  font-size: 13px;
+  color: var(--yellow);
+}
+
+.comment-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.comment-text {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Bouton "Merci pour l'avis" — style Play Store */
+.comment-thank-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.comment-thank-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: var(--orange-light);
+}
+
+.comment-thank-btn.thanked {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #FFF;
+  cursor: default;
+}
+
+
+/* ─────────────────────────────────────────────
+   4. RESPONSIVE
+───────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .comments-section { padding: 16px; }
+  .comment-form     { padding: 14px; }
+  .comment-date     { margin-left: 0; width: 100%; }
+}
