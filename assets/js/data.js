@@ -1,4 +1,3 @@
-
 // =============================================
 // SAVEURS APP — Données des recettes
 // Fichier partagé par toute l'équipe
@@ -8,7 +7,7 @@
 const recipes = [
 
   // ══════════════════════════════
-  // 🔥 PLATS CHAUDS (5 recettes)
+  // PLATS CHAUDS
   // ══════════════════════════════
   {
     id: 1,
@@ -20,9 +19,8 @@ const recipes = [
     rating: 4.8,
     calories: 380,
     tags: ["poulet", "four", "méditerranéen"],
-    emoji: "🍗",
     color: "#F97316",
-    image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c3?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",
     ingredients: [
       { name: "Poulet entier", amount: 1, unit: "entier" },
       { name: "Gousses d'ail", amount: 4, unit: "gousses" },
@@ -50,7 +48,6 @@ const recipes = [
     rating: 4.7,
     calories: 520,
     tags: ["pasta", "italien", "rapide"],
-    emoji: "🍝",
     color: "#F59E0B",
     image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80",
     ingredients: [
@@ -79,9 +76,8 @@ const recipes = [
     rating: 4.6,
     calories: 320,
     tags: ["indien", "végétarien", "épicé"],
-    emoji: "🍛",
     color: "#F97316",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",
     ingredients: [
       { name: "Pois chiches en boîte", amount: 400, unit: "g" },
       { name: "Tomates concassées", amount: 400, unit: "g" },
@@ -110,7 +106,6 @@ const recipes = [
     rating: 4.5,
     calories: 180,
     tags: ["français", "légumes", "provençal"],
-    emoji: "🫕",
     color: "#EF4444",
     image: "https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=600&q=80",
     ingredients: [
@@ -141,9 +136,8 @@ const recipes = [
     rating: 4.6,
     calories: 410,
     tags: ["français", "oeuf", "four", "lardons"],
-    emoji: "🥧",
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&q=80",
     ingredients: [
       { name: "Pâte brisée", amount: 1, unit: "rouleau" },
       { name: "Lardons fumés", amount: 200, unit: "g" },
@@ -155,7 +149,7 @@ const recipes = [
     ],
     steps: [
       "Préchauffer le four à 180°C. Foncer le moule avec la pâte brisée.",
-      "Faire revenir les lardons à la poêle sans matière grasse. Répartir sur la pâte.",
+      "Faire revenir les lardons à la poêle sans matière grasse.",
       "Battre les oeufs avec la crème, le lait, la muscade, sel et poivre.",
       "Verser l'appareil sur les lardons dans le moule.",
       "Enfourner 35-40 min jusqu'à ce que la quiche soit dorée et gonflée."
@@ -163,7 +157,7 @@ const recipes = [
   },
 
   // ══════════════════════════════
-  // ❄️ PLATS FROIDS (5 recettes)
+  // PLATS FROIDS
   // ══════════════════════════════
   {
     id: 6,
@@ -175,7 +169,6 @@ const recipes = [
     rating: 4.6,
     calories: 450,
     tags: ["healthy", "bowl", "quinoa", "coloré"],
-    emoji: "🥗",
     color: "#10B981",
     image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
     ingredients: [
@@ -206,7 +199,6 @@ const recipes = [
     rating: 4.5,
     calories: 280,
     tags: ["salade", "français", "thon", "méditerranéen"],
-    emoji: "🥙",
     color: "#10B981",
     image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80",
     ingredients: [
@@ -236,9 +228,8 @@ const recipes = [
     rating: 4.4,
     calories: 95,
     tags: ["espagnol", "soupe froide", "tomate", "été"],
-    emoji: "🍅",
     color: "#EF4444",
-    image: "https://images.unsplash.com/photo-1629744801838-74fc84c6b4c5?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&q=80",
     ingredients: [
       { name: "Tomates mûres", amount: 800, unit: "g" },
       { name: "Concombre", amount: 1, unit: "pièce" },
@@ -266,7 +257,6 @@ const recipes = [
     rating: 4.5,
     calories: 390,
     tags: ["wrap", "poulet", "rapide", "lunch"],
-    emoji: "🌯",
     color: "#F59E0B",
     image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80",
     ingredients: [
@@ -297,7 +287,6 @@ const recipes = [
     rating: 4.4,
     calories: 180,
     tags: ["libanais", "semoule", "végétarien", "frais"],
-    emoji: "🥗",
     color: "#10B981",
     image: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80",
     ingredients: [
@@ -311,16 +300,16 @@ const recipes = [
       { name: "Sel", amount: 1, unit: "c.c" }
     ],
     steps: [
-      "Verser l'eau bouillante sur la semoule, couvrir 5 min puis égrener à la fourchette.",
+      "Verser l'eau bouillante sur la semoule, couvrir 5 min puis égrener.",
       "Couper tomates et concombre en très petits dés.",
       "Hacher finement le persil et la menthe.",
       "Mélanger semoule refroidie + légumes + herbes.",
-      "Assaisonner avec citron, huile d'olive et sel. Réfrigérer 30 min avant de servir."
+      "Assaisonner avec citron, huile et sel. Réfrigérer 30 min."
     ]
   },
 
   // ══════════════════════════════
-  // 🍰 DESSERTS (5 recettes)
+  // DESSERTS
   // ══════════════════════════════
   {
     id: 11,
@@ -332,7 +321,6 @@ const recipes = [
     rating: 4.9,
     calories: 290,
     tags: ["café", "mascarpone", "italien", "sans cuisson"],
-    emoji: "🍮",
     color: "#8B5CF6",
     image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80",
     ingredients: [
@@ -363,7 +351,6 @@ const recipes = [
     rating: 4.8,
     calories: 340,
     tags: ["pomme", "caramel", "four", "français"],
-    emoji: "🥧",
     color: "#EF4444",
     image: "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=600&q=80",
     ingredients: [
@@ -391,9 +378,8 @@ const recipes = [
     rating: 4.7,
     calories: 310,
     tags: ["chocolat", "mousseux", "sans farine"],
-    emoji: "🍫",
     color: "#92400E",
-    image: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=600&q=80",
     ingredients: [
       { name: "Chocolat noir 70%", amount: 200, unit: "g" },
       { name: "Oeufs", amount: 4, unit: "pièces" },
@@ -420,7 +406,6 @@ const recipes = [
     rating: 4.8,
     calories: 380,
     tags: ["français", "vanille", "crème", "chalumeau"],
-    emoji: "🍯",
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=600&q=80",
     ingredients: [
@@ -449,7 +434,6 @@ const recipes = [
     rating: 4.9,
     calories: 420,
     tags: ["chocolat", "coulant", "four", "rapide"],
-    emoji: "🎂",
     color: "#7C2D12",
     image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80",
     ingredients: [
@@ -463,14 +447,14 @@ const recipes = [
       "Préchauffer le four à 200°C. Beurrer 4 ramequins.",
       "Faire fondre chocolat + beurre au bain-marie.",
       "Fouetter oeufs et sucre jusqu'à blanchiment.",
-      "Ajouter le chocolat fondu puis la farine tamisée. Bien mélanger.",
+      "Ajouter le chocolat fondu puis la farine tamisée.",
       "Verser dans les ramequins. Cuire exactement 11 min.",
       "Démouler immédiatement et servir avec une boule de glace vanille."
     ]
   },
 
   // ══════════════════════════════
-  // 🌱 VEGAN (5 recettes)
+  // VEGAN
   // ══════════════════════════════
   {
     id: 16,
@@ -482,7 +466,6 @@ const recipes = [
     rating: 4.5,
     calories: 420,
     tags: ["burger", "pois chiches", "complet"],
-    emoji: "🍔",
     color: "#10B981",
     image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=600&q=80",
     ingredients: [
@@ -513,7 +496,6 @@ const recipes = [
     rating: 4.6,
     calories: 290,
     tags: ["lentilles", "indien", "protéines", "épicé"],
-    emoji: "🥣",
     color: "#F97316",
     image: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=600&q=80",
     ingredients: [
@@ -544,9 +526,8 @@ const recipes = [
     rating: 4.4,
     calories: 180,
     tags: ["vietnamien", "frais", "légumes", "sans cuisson"],
-    emoji: "🫔",
     color: "#10B981",
-    image: "https://images.unsplash.com/photo-1617039497957-56bf9277b7b0?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80",
     ingredients: [
       { name: "Galettes de riz", amount: 8, unit: "pièces" },
       { name: "Vermicelles de riz cuits", amount: 100, unit: "g" },
@@ -559,7 +540,7 @@ const recipes = [
     ],
     steps: [
       "Couper carottes, concombre et avocat en julienne fine.",
-      "Tremper une galette de riz 10 sec dans l'eau tiède jusqu'à ramollissement.",
+      "Tremper une galette de riz 10 sec dans l'eau tiède.",
       "Déposer légumes, vermicelles et feuilles de menthe au centre.",
       "Replier les côtés puis rouler serré comme un cigare.",
       "Répéter pour les 8 rouleaux. Servir avec sauce hoisin et cacahuètes."
@@ -575,7 +556,6 @@ const recipes = [
     rating: 4.5,
     calories: 390,
     tags: ["hawaïen", "riz", "tofu", "healthy"],
-    emoji: "🍱",
     color: "#6366F1",
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",
     ingredients: [
@@ -589,11 +569,11 @@ const recipes = [
       { name: "Graines de sésame", amount: 1, unit: "c.s" }
     ],
     steps: [
-      "Cuire le riz à sushi et assaisonner avec vinaigre de riz et sucre.",
+      "Cuire le riz à sushi et assaisonner avec vinaigre de riz.",
       "Couper le tofu en dés et le faire mariner 15 min dans sauce soja + sésame.",
       "Faire revenir le tofu mariné à la poêle jusqu'à belle dorure.",
       "Couper avocat et concombre en tranches fines.",
-      "Assembler le bowl : riz + tofu + légumes + edamames. Arroser de sauce."
+      "Assembler : riz + tofu + légumes + edamames. Arroser de sauce."
     ]
   },
   {
@@ -606,9 +586,8 @@ const recipes = [
     rating: 4.3,
     calories: 160,
     tags: ["soupe", "courge", "automne", "réconfortant"],
-    emoji: "🎃",
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80",
     ingredients: [
       { name: "Courge butternut", amount: 1, unit: "pièce" },
       { name: "Carottes", amount: 3, unit: "pièces" },
@@ -623,13 +602,13 @@ const recipes = [
       "Préchauffer le four à 200°C.",
       "Couper courge, carottes et oignons en morceaux. Huiler, saler.",
       "Rôtir 30 min au four jusqu'à légère caramélisation.",
-      "Mixer les légumes rôtis avec le bouillon chaud jusqu'à texture lisse.",
+      "Mixer les légumes rôtis avec le bouillon chaud.",
       "Ajouter la crème de coco et le cumin. Réchauffer et servir."
     ]
   },
 
   // ══════════════════════════════
-  // 🔥 GRILLADES (5 recettes)
+  // GRILLADES
   // ══════════════════════════════
   {
     id: 21,
@@ -641,9 +620,8 @@ const recipes = [
     rating: 4.7,
     calories: 460,
     tags: ["agneau", "barbecue", "marinade"],
-    emoji: "🍢",
     color: "#DC2626",
-    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=600&q=80",
     ingredients: [
       { name: "Épaule d'agneau", amount: 800, unit: "g" },
       { name: "Huile d'olive", amount: 4, unit: "c.s" },
@@ -672,7 +650,6 @@ const recipes = [
     rating: 4.6,
     calories: 510,
     tags: ["porc", "barbecue", "miel", "caramélisé"],
-    emoji: "🥩",
     color: "#B45309",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
     ingredients: [
@@ -689,7 +666,7 @@ const recipes = [
       "Badigeonner généreusement les côtes de cette marinade.",
       "Laisser mariner 1h minimum au réfrigérateur.",
       "Griller sur barbecue chaud 8 min de chaque côté.",
-      "Badigeonner à nouveau de marinade en fin de cuisson pour bien caraméliser."
+      "Badigeonner à nouveau de marinade en fin pour caraméliser."
     ]
   },
   {
@@ -702,7 +679,6 @@ const recipes = [
     rating: 4.8,
     calories: 550,
     tags: ["boeuf", "grillade", "beurre", "rapide"],
-    emoji: "🥩",
     color: "#991B1B",
     image: "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80",
     ingredients: [
@@ -715,10 +691,10 @@ const recipes = [
       { name: "Poivre concassé", amount: 0.5, unit: "c.c" }
     ],
     steps: [
-      "Préparer le beurre maître d'hôtel : beurre mou + persil haché + ail + citron.",
+      "Préparer le beurre maître d'hôtel : beurre mou + persil + ail + citron.",
       "Former un boudin dans du film alimentaire. Réfrigérer 30 min.",
       "Sortir les entrecôtes 30 min avant. Saler et poivrer.",
-      "Griller 3 min de chaque côté sur grill très chaud (saignant).",
+      "Griller 3 min de chaque côté sur grill très chaud.",
       "Déposer une rondelle de beurre maître d'hôtel sur chaque entrecôte."
     ]
   },
@@ -732,9 +708,8 @@ const recipes = [
     rating: 4.6,
     calories: 340,
     tags: ["poulet", "épicé", "marinade", "barbecue"],
-    emoji: "🍗",
     color: "#F97316",
-    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&q=80",
     ingredients: [
       { name: "Pilons de poulet", amount: 8, unit: "pièces" },
       { name: "Paprika fumé", amount: 2, unit: "c.c" },
@@ -747,9 +722,9 @@ const recipes = [
     steps: [
       "Inciser les pilons en profondeur pour que la marinade pénètre bien.",
       "Mélanger toutes les épices avec huile et jus de citron.",
-      "Enduire généreusement les pilons de marinade. Repos 2h minimum.",
+      "Enduire généreusement les pilons. Repos 2h minimum.",
       "Griller sur barbecue 15 min de chaque côté à feu moyen.",
-      "Vérifier la cuisson avec un couteau : le jus doit être clair."
+      "Vérifier la cuisson : le jus doit être clair."
     ]
   },
   {
@@ -762,7 +737,6 @@ const recipes = [
     rating: 4.3,
     calories: 150,
     tags: ["légumes", "végétarien", "barbecue", "herbes"],
-    emoji: "🫑",
     color: "#10B981",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
     ingredients: [
@@ -776,16 +750,16 @@ const recipes = [
       { name: "Sel et poivre", amount: 1, unit: "portion" }
     ],
     steps: [
-      "Couper tous les légumes en tranches de 1 cm d'épaisseur.",
-      "Préparer l'huile d'herbes : mélanger huile + ail écrasé + herbes de Provence.",
-      "Badigeonner généreusement chaque légume d'huile d'herbes.",
-      "Griller chaque légume 3-4 min de chaque côté sur grill chaud.",
+      "Couper tous les légumes en tranches de 1 cm.",
+      "Mélanger huile + ail écrasé + herbes de Provence.",
+      "Badigeonner généreusement chaque légume.",
+      "Griller chaque légume 3-4 min de chaque côté.",
       "Saler, poivrer et arroser d'un filet d'huile avant de servir."
     ]
   },
 
   // ══════════════════════════════
-  // 🌍 AFRICAIN (5 recettes)
+  // AFRICAIN
   // ══════════════════════════════
   {
     id: 26,
@@ -797,7 +771,6 @@ const recipes = [
     rating: 4.9,
     calories: 520,
     tags: ["cameroun", "poulet", "plantain", "festif"],
-    emoji: "🍲",
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80",
     ingredients: [
@@ -815,7 +788,7 @@ const recipes = [
       "Assaisonner le poulet avec ail, sel, Maggi et épices. Faire dorer à l'huile.",
       "Retirer le poulet. Faire revenir oignons et poivrons dans la même huile.",
       "Ajouter carottes et haricots verts coupés. Cuire 5 min.",
-      "Remettre le poulet dans la casserole. Frire les plantains séparément.",
+      "Remettre le poulet. Frire les plantains séparément jusqu'à dorure.",
       "Ajouter les plantains frits dans la sauce.",
       "Mijoter 15 min à feu doux jusqu'à cuisson complète."
     ]
@@ -830,7 +803,6 @@ const recipes = [
     rating: 4.8,
     calories: 380,
     tags: ["cameroun", "ndolé", "crevettes", "arachides"],
-    emoji: "🥬",
     color: "#065F46",
     image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80",
     ingredients: [
@@ -846,11 +818,11 @@ const recipes = [
     ],
     steps: [
       "Bouillir les feuilles de ndolé 3 fois en changeant l'eau pour enlever l'amertume.",
-      "Faire revenir oignons et ail dans l'huile de palme jusqu'à dorure.",
+      "Faire revenir oignons et ail dans l'huile de palme.",
       "Ajouter la viande en dés. Faire bien dorer.",
       "Incorporer la pâte d'arachide diluée dans de l'eau chaude.",
       "Ajouter les feuilles de ndolé essorées et les crevettes.",
-      "Mijoter 30 min à feu doux en remuant. Servir avec du miondo."
+      "Mijoter 30 min à feu doux. Servir avec du miondo."
     ]
   },
   {
@@ -863,7 +835,6 @@ const recipes = [
     rating: 4.7,
     calories: 340,
     tags: ["nigeria", "riz", "tomate", "festif"],
-    emoji: "🍚",
     color: "#DC2626",
     image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80",
     ingredients: [
@@ -895,9 +866,8 @@ const recipes = [
     rating: 4.7,
     calories: 450,
     tags: ["sénégal", "arachide", "boeuf", "sauce"],
-    emoji: "🥘",
     color: "#92400E",
-    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&q=80",
     ingredients: [
       { name: "Boeuf à braiser", amount: 800, unit: "g" },
       { name: "Pâte d'arachide", amount: 200, unit: "g" },
@@ -928,9 +898,8 @@ const recipes = [
     rating: 4.8,
     calories: 490,
     tags: ["sénégal", "poisson", "riz", "légumes"],
-    emoji: "🐟",
     color: "#0EA5E9",
-    image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=600&q=80",
     ingredients: [
       { name: "Poisson entier (mulet)", amount: 1.5, unit: "kg" },
       { name: "Riz brisé", amount: 600, unit: "g" },
@@ -944,7 +913,7 @@ const recipes = [
     ],
     steps: [
       "Préparer la farce avec ail, piment et persil. Farcir le poisson.",
-      "Faire dorer le poisson dans l'huile chaude de chaque côté. Réserver.",
+      "Faire dorer le poisson dans l'huile chaude. Réserver.",
       "Faire revenir oignons et concentré de tomate 15 min.",
       "Ajouter les légumes et l'eau. Cuire 30 min. Remettre le poisson.",
       "Retirer poisson et légumes. Cuire le riz dans le bouillon parfumé.",
@@ -953,7 +922,7 @@ const recipes = [
   },
 
   // ══════════════════════════════
-  // 🏰 EUROPÉEN (5 recettes)
+  // EUROPÉEN
   // ══════════════════════════════
   {
     id: 31,
@@ -965,7 +934,6 @@ const recipes = [
     rating: 4.9,
     calories: 580,
     tags: ["français", "boeuf", "vin rouge", "mijoté"],
-    emoji: "🥘",
     color: "#7C2D12",
     image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=600&q=80",
     ingredients: [
@@ -998,7 +966,6 @@ const recipes = [
     rating: 4.8,
     calories: 460,
     tags: ["espagnol", "riz", "fruits de mer", "safran"],
-    emoji: "🥘",
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600&q=80",
     ingredients: [
@@ -1031,7 +998,6 @@ const recipes = [
     rating: 4.6,
     calories: 490,
     tags: ["autrichien", "veau", "pané", "croustillant"],
-    emoji: "🍖",
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80",
     ingredients: [
@@ -1048,7 +1014,7 @@ const recipes = [
       "Saler et poivrer. Passer dans farine, oeuf battu puis chapelure.",
       "Ne pas appuyer sur la chapelure pour qu'elle reste aérée.",
       "Faire chauffer le beurre clarifié dans une grande poêle.",
-      "Cuire 3 min de chaque côté en arrosant de beurre régulièrement.",
+      "Cuire 3 min de chaque côté en arrosant de beurre.",
       "Servir immédiatement avec quartiers de citron et salade."
     ]
   },
@@ -1062,7 +1028,6 @@ const recipes = [
     rating: 4.7,
     calories: 420,
     tags: ["italien", "riz", "champignons", "crémeux"],
-    emoji: "🍚",
     color: "#6B7280",
     image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80",
     ingredients: [
@@ -1094,7 +1059,6 @@ const recipes = [
     rating: 4.7,
     calories: 480,
     tags: ["grec", "aubergine", "agneau", "gratiné"],
-    emoji: "🫙",
     color: "#7C3AED",
     image: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80",
     ingredients: [
@@ -1110,11 +1074,11 @@ const recipes = [
       { name: "Parmesan râpé", amount: 60, unit: "g" }
     ],
     steps: [
-      "Couper les aubergines en tranches. Saler, laisser dégorger 20 min, rincer et griller.",
+      "Couper les aubergines en tranches. Saler, dégorger 20 min, rincer et griller.",
       "Faire revenir oignons + agneau haché. Ajouter tomates et cannelle. Mijoter 20 min.",
       "Préparer la béchamel : fondre beurre, ajouter farine puis lait chaud en fouettant.",
-      "Hors feu, incorporer l'oeuf et la moitié du parmesan à la béchamel.",
-      "Monter dans un plat : aubergines, viande, aubergines, béchamel, parmesan.",
+      "Hors feu, incorporer l'oeuf et la moitié du parmesan.",
+      "Monter : aubergines, viande, aubergines, béchamel, parmesan.",
       "Enfourner 45 min à 180°C. Laisser reposer 15 min avant de couper."
     ]
   }
