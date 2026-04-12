@@ -1,4 +1,4 @@
-/* =============================================
+ /* =============================================
    SAVEURS APP — Recherche, Filtres & Cards
    Fichier : assets/js/search.js
    Codé par : Personne 2
