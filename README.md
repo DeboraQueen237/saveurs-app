@@ -14,17 +14,7 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 ## 👥 Équipe
 | Membre | Rôle |
 |--------|------|
-<<<<<<< HEAD
-<<<<<<< HEAD
-| AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données, documentations du projet |
-| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche, Calculateur , Favoris |
-| ABENA  ZE  ROSE  ALEXIA | Détail des recettes, PDF, Partage des recettes, Theme, commentaires |
-=======
-| AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
-| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
-=======
 | AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
->>>>>>> 76fb0ae (commit de correction de conflits dans le README)
 | ABENA  ZE  ROSE  ALEXIA | Détail, Calculateur, Favoris |
 | TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
 | WANDJI TCHAGANG TRAVIS | ajout fonctionnalites |
