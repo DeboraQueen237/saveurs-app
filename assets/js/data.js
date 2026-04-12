@@ -20,7 +20,7 @@ const recipes = [
     calories: 230,
     tags: ["pancakes", "sucre", "friture"],
     color: "#F97316",
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1723579413852-d71dbd8641d2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UG91bGV0JTIwUiVDMyVCNHRpJTIwTSVDMyVBOWRpdGVycmFuJUMzJUE5ZW58ZW58MHx8MHx8fDA%3D",
     ingredients: [
       { name: "farine", amount: 250, unit: "g" },
       { name: "oeufs", amount: 2, unit: "pièces" },
@@ -79,7 +79,7 @@ const recipes = [
     calories: 320,
     tags: ["indien", "végétarien", "épicé"],
     color: "#F97316",
-    image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1695456064603-aa7568121827?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q3VycnklMjBkZSUyMFBvaXMlMjBDaGljaGVzfGVufDB8fDB8fHww",
     ingredients: [
       { name: "Aubergine", amount: 1, unit: "pièce" },
       { name: "Tomates", amount: 2, unit: "fruits" },
@@ -321,7 +321,7 @@ const recipes = [
     calories: 290,
     tags: ["café", "mascarpone", "italien", "sans cuisson"],
     color: "#8B5CF6",
-    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1587322740944-9bc2776404e8?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8VGlyYW1pc3UlMjBDbGFzc2lxdWV8ZW58MHx8MHx8fDA%3D",
     ingredients: [
       { name: "Mascarpone", amount: 250, unit: "g" },
       { name: "Oeufs", amount: 3, unit: "pièces" },
@@ -378,7 +378,7 @@ const recipes = [
     calories: 310,
     tags: ["fraise", "crème", "vanille"],
     color: "#92400E",
-    image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=600&q=80",
     ingredients: [
       { name: "Glace chocolat", amount: 300, unit: "g" },
       { name: "Biscuits", amount: 100, unit: "g" },
@@ -407,7 +407,7 @@ const recipes = [
     calories: 380,
     tags: ["français", "vanille", "crème"],
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1676300184943-09b2a08319a3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q3IlQzMlQThtZSUyMEJyJUMzJUJCbCVDMyVBOWV8ZW58MHx8MHx8fDA%3D",
     ingredients: [
       { name: "Blancs d'oeuf", amount: 2, unit: "pièces" },
       { name: "Sucre glace", amount: 90, unit: "g" },
@@ -656,7 +656,7 @@ const recipes = [
     calories: 510,
     tags: ["porc", "barbecue", "miel", "caramélisé"],
     color: "#B45309",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1664478272084-532c1bfebd25?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QyVDMyVCNHRlcyUyMGRlJTIwUG9yYyUyMENhcmFtJUMzJUE5bGlzJUMzJUE5ZXN8ZW58MHx8MHx8fDA%3D",
     ingredients: [
       { name: "Côtes de porc", amount: 4, unit: "pièces" },
       { name: "Sauce soja", amount: 3, unit: "c.s" },
@@ -777,7 +777,7 @@ const recipes = [
     calories: 520,
     tags: ["cameroun", "poulet", "plantain", "festif"],
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1710508774177-7ac2f3492675?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvdWxldCUyMERHfGVufDB8fDB8fHww.",
     ingredients: [
       { name: "Poulet découpé", amount: 1.5, unit: "kg" },
       { name: "Bananes plantains mûres", amount: 3, unit: "pièces" },
@@ -809,7 +809,7 @@ const recipes = [
     calories: 380,
     tags: ["cameroun", "ndolé", "crevettes", "arachides"],
     color: "#065F46",
-    image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80",
+    image: "https://media.istockphoto.com/id/2033440993/fr/photo/gros-plan-dun-plat-avec-des-crevettes-fra%C3%AEches.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z3JfiBiySZC8DpC37Kt7NSpiIbbjbN5eKNeaNEEdK8k=",
     ingredients: [
       { name: "Feuilles de ndolé", amount: 500, unit: "g" },
       { name: "Crevettes fraîches", amount: 400, unit: "g" },
@@ -841,7 +841,7 @@ const recipes = [
     calories: 340,
     tags: ["nigeria", "riz", "tomate", "festif"],
     color: "#DC2626",
-    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am9sbG9mJTIwcmljZXxlbnwwfHwwfHx8MA%3D%3D",
     ingredients: [
       { name: "Riz long grain", amount: 400, unit: "g" },
       { name: "Tomates fraîches mixées", amount: 400, unit: "ml" },
@@ -872,7 +872,7 @@ const recipes = [
     calories: 450,
     tags: ["sénégal", "arachide", "boeuf", "sauce"],
     color: "#92400E",
-    image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1773620494047-50cb58f59bc5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TWFmJUMzJUE5JTIwYXUlMjBCb2V1ZnxlbnwwfHwwfHx8MA%3D%3D",
     ingredients: [
       { name: "Boeuf à braiser", amount: 800, unit: "g" },
       { name: "Pâte d'arachide", amount: 200, unit: "g" },
@@ -904,7 +904,7 @@ const recipes = [
     calories: 490,
     tags: ["sénégal", "poisson", "riz", "légumes"],
     color: "#0EA5E9",
-    image: "https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VGhpJUMzJUE5Ym91ZGllbm5lfGVufDB8fDB8fHww.",
     ingredients: [
       { name: "Poisson entier (mulet)", amount: 1.5, unit: "kg" },
       { name: "Riz brisé", amount: 600, unit: "g" },
@@ -1004,7 +1004,7 @@ const recipes = [
     calories: 490,
     tags: ["autrichien", "veau", "pané", "croustillant"],
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80",
     ingredients: [
       { name: "Escalopes de veau", amount: 4, unit: "pièces" },
       { name: "Farine", amount: 80, unit: "g" },
@@ -1065,7 +1065,7 @@ const recipes = [
     calories: 480,
     tags: ["grec", "aubergine", "agneau", "gratiné"],
     color: "#7C3AED",
-    image: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80",
+    image: "https://media.istockphoto.com/id/483402408/fr/photo/une-moussaka-grecque-traditionnelle-plat.webp?a=1&b=1&s=612x612&w=0&k=20&c=pac_NgEqQLFt-Z9e8d0GGoxNJvTLPaVv6UBjAlaxb2M=",
     ingredients: [
       { name: "Aubergines", amount: 3, unit: "pièces" },
       { name: "Viande d'agneau hachée", amount: 500, unit: "g" },
