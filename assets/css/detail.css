@@ -348,9 +348,9 @@
   transition: all 0.3s ease;
 }
 
-.ingredient-item.changed  { border-color: var(--orange); background: var(--orange-light); }
-.ingredient-name          { font-size: 14px; color: var(--text); }
-.ingredient-amount        { font-size: 14px; font-weight: 700; color: var(--text); transition: color 0.3s ease; min-width: 100px; text-align: right; }
+.ingredient-item.changed  { border-color: var(--orange); background: #FFF7ED; }
+.ingredient-name          { font-size: 14px; color: var(--orange); }
+.ingredient-amount        { font-size: 14px; font-weight: 700; color: var(--orange); transition: color 0.3s ease; min-width: 100px; text-align: right; color: var(--orange); }
 .ingredient-amount.changed{ color: var(--orange); }
 
 .btn-reset-servings {
