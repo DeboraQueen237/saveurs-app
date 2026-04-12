@@ -29,11 +29,11 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 | Membre | Rôle |
 |--------|------|
 <<<<<<< HEAD
-| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données, documentations du projet |
+| AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données, documentations du projet |
 | TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche, Calculateur , Favoris |
 | ABENA  ZE  ROSE  ALEXIA | Détail des recettes, PDF, Partage des recettes, Theme, commentaires |
 =======
-| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
+| AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
 | TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
 | ABENA  ZE  ROSE  ALEXIA | Détail, Calculateur, Favoris |
 | WANDJI TCHAGANG TRAVIS | ajout fonctionnalites |
