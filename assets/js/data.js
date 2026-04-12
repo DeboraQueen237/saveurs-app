@@ -11,31 +11,33 @@ const recipes = [
   // ══════════════════════════════
   {
     id: 1,
-    title: "Poulet Rôti Méditerranéen",
-    category: "Plats Chauds",
-    time: "45 min",
+    title: "Pancakes miel et bananes",
+    category: "Desserts",
+    time: "30 min",
     baseServings: 4,
     difficulty: "Facile",
-    rating: 4.8,
-    calories: 380,
-    tags: ["poulet", "four", "méditerranéen"],
+    rating: 4.5,
+    calories: 230,
+    tags: ["pancakes", "sucre", "friture"],
     color: "#F97316",
     image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",
     ingredients: [
-      { name: "Poulet entier", amount: 1, unit: "entier" },
-      { name: "Gousses d'ail", amount: 4, unit: "gousses" },
-      { name: "Citron", amount: 1, unit: "pièce" },
-      { name: "Huile d'olive", amount: 3, unit: "c.s" },
-      { name: "Thym frais", amount: 2, unit: "branches" },
-      { name: "Sel", amount: 1, unit: "c.c" },
-      { name: "Poivre noir", amount: 0.5, unit: "c.c" }
+      { name: "farine", amount: 250, unit: "g" },
+      { name: "oeufs", amount: 2, unit: "pièces" },
+      { name: "lait", amount: 30, unit: "cl" },
+      { name: "levure", amount: 1, unit: "sachet" },
+      { name: "sucre", amount: 2, unit: "c.s" },
+      { name: "Beurre", amount: 30, unit: "g" },
+      { name: "sel", amount: 1, unit: "pincée" },
+      { name: "banane", amount: 2, unit: "pièces" },
+      { name: "miel", amount: 2, unit: "c.c" }
     ],
     steps: [
-      "Préchauffer le four à 200°C.",
-      "Masser le poulet avec l'huile d'olive, l'ail écrasé et le thym.",
-      "Glisser le citron coupé en deux à l'intérieur du poulet.",
-      "Saler et poivrer généreusement sur toute la surface.",
-      "Enfourner 45 min jusqu'à belle dorure. Arroser à mi-cuisson."
+      "Mélanger la farine, sucre et levure.",
+      "Ajouter les oeufs puis le lait et enfin le sel.",
+      "Mélanger jusqu'à otenir une pate lisse.",
+      "Faire cuise dans une poele beurrée.",
+      "Servir avec le miel et les bananes découpées en rondelle."
     ]
   },
   {
@@ -68,7 +70,7 @@ const recipes = [
   },
   {
     id: 3,
-    title: "Curry de Pois Chiches",
+    title: "Curry aux légumes",
     category: "Plats Chauds",
     time: "35 min",
     baseServings: 4,
@@ -79,21 +81,20 @@ const recipes = [
     color: "#F97316",
     image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",
     ingredients: [
-      { name: "Pois chiches en boîte", amount: 400, unit: "g" },
-      { name: "Tomates concassées", amount: 400, unit: "g" },
-      { name: "Lait de coco", amount: 200, unit: "ml" },
+      { name: "Aubergine", amount: 1, unit: "pièce" },
+      { name: "Tomates", amount: 2, unit: "fruits" },
       { name: "Oignon", amount: 1, unit: "pièce" },
-      { name: "Pâte de curry rouge", amount: 2, unit: "c.s" },
-      { name: "Ail", amount: 3, unit: "gousses" },
-      { name: "Gingembre frais", amount: 1, unit: "c.c" },
-      { name: "Huile de coco", amount: 2, unit: "c.s" }
+      { name: "curry", amount: 1, unit: "c.c" },
+      { name: "Ail", amount: 2, unit: "gousses" },
+      { name: "Sel", amount: 1, unit: "pincée" },
+      { name: "Huile", amount: 2, unit: "c.s" }
     ],
     steps: [
-      "Faire revenir l'oignon émincé dans l'huile de coco 5 min.",
-      "Ajouter l'ail, le gingembre et la pâte de curry. Cuire 2 min.",
-      "Incorporer les tomates et laisser mijoter 10 min.",
-      "Ajouter les pois chiches égouttés et le lait de coco.",
-      "Cuire encore 15 min à feu doux. Servir avec du riz basmati."
+      "Couper les légumes.",
+      "Faire revenir oignon et l'ail dans la poele.",
+      "Ajouter aubergine et laisse cuire.",
+      "Ajouter les tomates, le sel et les épices.",
+      "Laisser mijoter jusqu'à une texture fondante."
     ]
   },
   {
@@ -128,31 +129,29 @@ const recipes = [
   },
   {
     id: 5,
-    title: "Quiche Lorraine",
+    title: "Pizza",
     category: "Plats Chauds",
     time: "55 min",
     baseServings: 6,
     difficulty: "Moyen",
     rating: 4.6,
     calories: 410,
-    tags: ["français", "oeuf", "four", "lardons"],
+    tags: ["italien", "fromage", "four", "pizza"],
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600&q=80",
     ingredients: [
-      { name: "Pâte brisée", amount: 1, unit: "rouleau" },
-      { name: "Lardons fumés", amount: 200, unit: "g" },
-      { name: "Oeufs", amount: 3, unit: "pièces" },
-      { name: "Crème fraîche épaisse", amount: 200, unit: "ml" },
-      { name: "Lait entier", amount: 100, unit: "ml" },
-      { name: "Noix de muscade", amount: 0.5, unit: "c.c" },
-      { name: "Sel et poivre", amount: 1, unit: "portion" }
+      { name: "Pâte à pizza", amount: 250, unit: "g" },
+      { name: "Sauce tomate", amount: 150, unit: "g" },
+      { name: "Mozzarella", amount: 200, unit: "g" },
+      { name: "Roquette", amount: 1, unit: "poignée" },
+      { name: "Sel", amount: 1, unit: "pincée" },
+      { name: "Huile d'olive", amount: 1, unit: "c.s" }  
     ],
     steps: [
-      "Préchauffer le four à 180°C. Foncer le moule avec la pâte brisée.",
-      "Faire revenir les lardons à la poêle sans matière grasse.",
-      "Battre les oeufs avec la crème, le lait, la muscade, sel et poivre.",
-      "Verser l'appareil sur les lardons dans le moule.",
-      "Enfourner 35-40 min jusqu'à ce que la quiche soit dorée et gonflée."
+      "Etale la pate.",
+      "Ajouter la sauce et le fromage.",
+      "Mettre au four à 200°C.",
+      "Ajouter la roquette après cuisson.",
     ]
   },
 
@@ -370,65 +369,71 @@ const recipes = [
   },
   {
     id: 13,
-    title: "Mousse au Chocolat",
+    title: "Cupcakes à la fraise",
     category: "Desserts",
-    time: "20 min",
+    time: "3 h",
     baseServings: 4,
     difficulty: "Moyen",
     rating: 4.7,
     calories: 310,
-    tags: ["chocolat", "mousseux", "sans farine"],
+    tags: ["fraise", "crème", "vanille"],
     color: "#92400E",
-    image: "https://images.unsplash.com/photo-1511715282680-fbf93a50e721?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80",
     ingredients: [
-      { name: "Chocolat noir 70%", amount: 200, unit: "g" },
-      { name: "Oeufs", amount: 4, unit: "pièces" },
-      { name: "Sucre", amount: 40, unit: "g" },
-      { name: "Beurre", amount: 30, unit: "g" },
-      { name: "Sel", amount: 1, unit: "pincée" }
+      { name: "Glace chocolat", amount: 300, unit: "g" },
+      { name: "Biscuits", amount: 100, unit: "g" },
+      { name: "Crème fraiche épaisse", amount: 120, unit: "ml" },
+      { name: "Chocolat en pépites", amount: 50, unit: "g" },
+      { name: "Sucre", amount: 1, unit: "c.s" }
     ],
     steps: [
-      "Faire fondre le chocolat avec le beurre au bain-marie. Laisser tiédir.",
-      "Séparer les blancs des jaunes. Ajouter les jaunes au chocolat fondu.",
-      "Ajouter le sucre et bien mélanger.",
-      "Monter les blancs en neige ferme avec une pincée de sel.",
-      "Incorporer délicatement les blancs au chocolat en 3 fois.",
-      "Répartir dans des verrines. Réfrigérer minimum 3h avant de servir."
+      "Laisser légèrement ramollir la glace aux chocolats.",
+      "Mélanger avec la crème fraiche.",
+      "Ecrase les biscuits en morceaux.",
+      "Ajouter les dans le mélange et les pépites de chocolat.",
+      "Mélanger doucement pour garder les morceaux.",
+      "Verse dans un moule.",
+      "Mettre au congélanteur ."
     ]
   },
   {
     id: 14,
-    title: "Crème Brûlée",
+    title: "Macarons",
     category: "Desserts",
-    time: "60 min",
+    time: "50 min",
     baseServings: 4,
     difficulty: "Moyen",
     rating: 4.8,
     calories: 380,
-    tags: ["français", "vanille", "crème", "chalumeau"],
+    tags: ["français", "vanille", "crème"],
     color: "#D97706",
     image: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=600&q=80",
     ingredients: [
-      { name: "Crème liquide entière", amount: 500, unit: "ml" },
-      { name: "Jaunes d'oeufs", amount: 5, unit: "pièces" },
-      { name: "Sucre en poudre", amount: 100, unit: "g" },
-      { name: "Gousse de vanille", amount: 1, unit: "pièce" },
-      { name: "Sucre roux", amount: 4, unit: "c.s" }
+      { name: "Blancs d'oeuf", amount: 2, unit: "pièces" },
+      { name: "Sucre glace", amount: 90, unit: "g" },
+      { name: "Poudre d'amande", amount: 80, unit: "g" },
+      { name: "Vanille", amount: 1, unit: "pincée" },
+      { name: "Chocolat noir au lait", amount: 100, unit: "g" },
+      { name: "Crème liquide", amount: 50, unit: "ml" },
+      { name: "Sucre en poudre", amount: 30, unit: "g" }
     ],
     steps: [
-      "Préchauffer le four à 150°C. Fendre la vanille et gratter les graines.",
-      "Chauffer la crème avec la vanille sans faire bouillir.",
-      "Fouetter jaunes d'oeufs et sucre jusqu'à blanchiment.",
-      "Verser la crème chaude sur les jaunes en fouettant doucement.",
-      "Répartir dans des ramequins. Cuire au bain-marie 45 min.",
-      "Réfrigérer 4h. Saupoudrer de sucre roux et brûler au chalumeau."
+      "Mixer sucre glace avec la poudre d'amande.",
+      "Monter les blancs en neige avec le sucre en poudre.",
+      "Incoporer les poudres doucement.",
+      "Pocher des petits ronds sur plaque.",
+      "Laisser reposer 30 min.",
+      "Cuire 12 à 15 min à 150°C.",
+      "Faire chauffer la crème et y verser le chocolat.",
+      "Mélanger jusqu'à la texture lisse et laisser refroidir.",
+      "Garnir les macarons de la mixture.",
     ]
   },
   {
     id: 15,
-    title: "Fondant au Chocolat",
+    title: "Glace aux chocolats",
     category: "Desserts",
-    time: "25 min",
+    time: "40 min",
     baseServings: 4,
     difficulty: "Facile",
     rating: 4.9,
@@ -999,7 +1004,7 @@ const recipes = [
     calories: 490,
     tags: ["autrichien", "veau", "pané", "croustillant"],
     color: "#D97706",
-    image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80",
     ingredients: [
       { name: "Escalopes de veau", amount: 4, unit: "pièces" },
       { name: "Farine", amount: 80, unit: "g" },
