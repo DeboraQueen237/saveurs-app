@@ -10,6 +10,9 @@ Application web développée à KEYCE Informatique par une équipe de 3 étudian
 - Calculateur de portions automatique
 - Système de favoris (localStorage)
 - Mode sombre / clair
+- Thèmes
+- Commentaires
+- Export pdf et partage
 
 ## 🛠️ Technologies
 HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
@@ -17,9 +20,9 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 ## 👥 Équipe
 | Membre | Rôle |
 |--------|------|
-| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
-| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
-| ABENA  ZE  ROSE  ALEXIA | Détail, Calculateur, Favoris |
+| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données, documentations du projet |
+| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche, Calculateur , Favoris |
+| ABENA  ZE  ROSE  ALEXIA | Détail des recettes, PDF, Partage des recettes, Theme, commentaires |
 
 ## 🚀 Lancer le projet
 ```bash

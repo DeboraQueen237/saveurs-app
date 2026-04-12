@@ -29,6 +29,9 @@ function openRecipeDetail(recipeId) {
   document.getElementById("pageDetail").classList.add("active");
   document.getElementById("pageDetail").innerHTML = buildDetailHTML(currentRecipe);
 
+  // ✅ Ajoute cette ligne ↓
+  initComments(currentRecipe.id);
+
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -196,6 +199,34 @@ function buildDetailHTML(recipe) {
           <span class="detail-tag">#${tag}</span>
         `).join("")}
       </div>
+
+         <!-- Section Commentaires -->
+<div class="comments-section">
+  <h2 class="comments-section-title">💬 Avis & Commentaires</h2>
+
+  <!-- Formulaire -->
+  <div class="comment-form">
+    <h3>Laisser un avis</h3>
+    <div class="comment-form-stars">
+      <span class="comment-form-star" data-value="1">★</span>
+      <span class="comment-form-star" data-value="2">★</span>
+      <span class="comment-form-star" data-value="3">★</span>
+      <span class="comment-form-star" data-value="4">★</span>
+      <span class="comment-form-star" data-value="5">★</span>
+    </div>
+    <span class="comment-stars-label" id="commentStarsLabel">Clique pour noter</span>
+    <input type="text" id="commentName" placeholder="Ton prénom" maxlength="50" />
+    <textarea id="commentText" placeholder="Ton avis sur cette recette..." maxlength="500"></textarea>
+    <button class="comment-submit-btn" id="commentSubmitBtn"
+      onclick="submitComment(${recipe.id})">
+      Envoyer mon avis ✉️
+    </button>
+    <span class="comment-status" id="commentStatus"></span>
+  </div>
+
+  <!-- Liste des commentaires -->
+  <div id="commentsList"></div>
+</div> 
 
     </div>
 
