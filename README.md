@@ -17,9 +17,9 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 ## 👥 Équipe
 | Membre | Rôle |
 |--------|------|
-| Personne 1 | Chef de projet — Navbar, Hero, Données |
-| Personne 2 | Cards, Filtres, Recherche |
-| Personne 3 | Détail, Calculateur, Favoris |
+| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
+| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
+| ABENA  ZE  ROSE  ALEXIA | Détail, Calculateur, Favoris |
 
 ## 🚀 Lancer le projet
 ```bash
@@ -29,4 +29,4 @@ cd saveurs-app
 ```
 
 ## 🌐 URL en ligne
-https://[username].github.io/saveurs-app
+https://DeboraQueen237.github.io/saveurs-app

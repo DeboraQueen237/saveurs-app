@@ -1,1 +1,602 @@
- 
+/* =============================================
+   SAVEURS APP — Page Détail, Calculateur,
+                 PDF & Partage
+   Fichier : assets/css/detail.css
+   Codé par : Personne 3
+   ============================================= */
+
+
+/* ─────────────────────────────────────────────
+   1. CONTENEUR PAGE DÉTAIL
+───────────────────────────────────────────── */
+.detail-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 28px 24px 60px;
+  animation: fadeIn 0.3s ease;
+}
+
+.detail-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  transition: var(--transition-fast);
+}
+
+.detail-back-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  background: var(--orange-light);
+  transform: translateX(-3px);
+}
+
+
+/* ─────────────────────────────────────────────
+   2. BOUTONS ACTIONS (PDF + PARTAGE)
+───────────────────────────────────────────── */
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  transition: var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.action-btn-icon {
+  font-size: 15px;
+}
+
+/* Bouton PDF */
+.action-btn-pdf {
+  background: #EF4444;
+  color: #FFFFFF;
+}
+
+.action-btn-pdf:hover:not(:disabled) {
+  background: #DC2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
+}
+
+.action-btn-pdf:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Bouton Partager */
+.action-btn-share {
+  background: #10B981;
+  color: #FFFFFF;
+}
+
+.action-btn-share:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+}
+
+
+/* ─────────────────────────────────────────────
+   3. HERO DÉTAIL
+───────────────────────────────────────────── */
+.detail-hero {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  height: 280px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.detail-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-hero-fallback {
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+.detail-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.4) 100%);
+}
+
+.detail-fav-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: none;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.detail-fav-btn:hover  { transform: scale(1.1); }
+.detail-fav-btn.active { background: var(--red); }
+
+
+/* ─────────────────────────────────────────────
+   4. INFOS PRINCIPALES
+───────────────────────────────────────────── */
+.detail-info-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.detail-category-badge {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.detail-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.detail-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.detail-stars       { color: var(--yellow); font-size: 14px; }
+.detail-rating-value{ font-size: 13px; color: var(--text-sub); font-weight: 500; }
+
+.detail-quick-infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.detail-quick-item {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.detail-quick-icon  { font-size: 22px; display: block; margin-bottom: 5px; }
+.detail-quick-value { font-size: 15px; font-weight: 700; color: var(--text); display: block; margin-bottom: 2px; }
+.detail-quick-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+
+/* ─────────────────────────────────────────────
+   5. CALCULATEUR DE PORTIONS
+───────────────────────────────────────────── */
+.calculator-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--orange);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.calculator-label { display: block; font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.calculator-base  { font-size: 12px; color: var(--text-muted); }
+
+.calculator-control { display: flex; align-items: center; }
+
+.calc-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  border: 2px solid var(--orange);
+  background: var(--orange-light);
+  color: var(--orange);
+  transition: var(--transition-fast);
+}
+
+.calc-btn:hover:not(:disabled) { background: var(--orange); color: #FFF; }
+.calc-btn:disabled { border-color: var(--border); background: var(--bg-secondary); color: var(--text-muted); cursor: not-allowed; }
+.calc-btn-minus { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+.calc-btn-plus  { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+
+.calc-value {
+  width: 56px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--orange);
+  background: var(--orange-light);
+  border-top: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+  transition: transform 0.15s ease;
+}
+
+.calc-value.bump { transform: scale(1.2); }
+
+.progress-bar {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  height: 5px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange), var(--red));
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-label { font-size: 11px; color: var(--text-muted); }
+
+.calculator-badge {
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  display: none;
+  animation: slideDown 0.2s ease;
+}
+
+.calculator-badge.visible  { display: block; }
+.calculator-badge.multiply { background: #ECFDF5; border: 1px solid #A7F3D0; color: #059669; }
+.calculator-badge.divide   { background: #FEF2F2; border: 1px solid #FECACA; color: #DC2626; }
+
+
+/* ─────────────────────────────────────────────
+   6. INGRÉDIENTS
+───────────────────────────────────────────── */
+.ingredients-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.detail-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.detail-section-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+.ingredients-serving-label { font-size: 13px; font-weight: 600; }
+
+.ingredients-list { display: flex; flex-direction: column; gap: 8px; }
+
+.ingredient-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  transition: all 0.3s ease;
+}
+
+.ingredient-item.changed  { border-color: var(--orange); background: var(--orange-light); }
+.ingredient-name          { font-size: 14px; color: var(--text); }
+.ingredient-amount        { font-size: 14px; font-weight: 700; color: var(--text); transition: color 0.3s ease; min-width: 100px; text-align: right; }
+.ingredient-amount.changed{ color: var(--orange); }
+
+.btn-reset-servings {
+  margin-top: 12px;
+  width: 100%;
+  padding: 9px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  display: none;
+}
+
+.btn-reset-servings.visible { display: block; }
+.btn-reset-servings:hover   { border-color: var(--orange); color: var(--orange); }
+
+
+/* ─────────────────────────────────────────────
+   7. ÉTAPES
+───────────────────────────────────────────── */
+.steps-card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 24px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+
+.steps-list { display: flex; flex-direction: column; gap: 14px; }
+.step-item  { display: flex; gap: 14px; align-items: flex-start; }
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFF;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.step-text { font-size: 14px; line-height: 1.7; color: var(--text); padding-top: 4px; }
+
+
+/* ─────────────────────────────────────────────
+   8. TAGS
+───────────────────────────────────────────── */
+.detail-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+
+.detail-tag {
+  background: var(--bg-secondary);
+  color: var(--text-sub);
+  border-radius: var(--radius-full);
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: var(--transition-fast);
+}
+
+.detail-tag:hover { background: var(--orange-light); color: var(--orange); }
+
+
+/* ─────────────────────────────────────────────
+   9. MODAL DE PARTAGE
+───────────────────────────────────────────── */
+.share-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  backdrop-filter: blur(4px);
+}
+
+.share-modal-overlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.share-modal {
+  background: var(--card);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(20px);
+  transition: transform 0.25s ease;
+  border: 1px solid var(--border);
+}
+
+.share-modal-overlay.visible .share-modal {
+  transform: translateY(0);
+}
+
+.share-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.share-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+.share-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: none;
+  color: var(--text-sub);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.share-modal-close:hover {
+  background: var(--red);
+  color: #FFF;
+}
+
+.share-modal-recipe {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.share-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Option de partage */
+.share-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  transition: var(--transition-fast);
+  text-align: left;
+  width: 100%;
+  font-family: var(--font-body);
+}
+
+.share-option:hover {
+  transform: translateX(4px);
+  border-color: transparent;
+}
+
+.share-option-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.share-option-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.share-option-text strong {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.share-option-text span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* WhatsApp */
+.share-whatsapp:hover {
+  background: #DCFCE7;
+  border-color: #86EFAC;
+}
+
+.share-whatsapp .share-option-icon {
+  background: #25D366;
+  font-size: 20px;
+}
+
+/* Copier lien */
+.share-copy:hover {
+  background: var(--orange-light);
+  border-color: var(--orange);
+}
+
+.share-copy.copied {
+  background: #ECFDF5;
+  border-color: #10B981;
+}
+
+.share-copy .share-option-icon {
+  background: var(--orange-light);
+  font-size: 20px;
+}
+
+
+/* ─────────────────────────────────────────────
+   10. RESPONSIVE
+───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .detail-page   { padding: 20px 16px 48px; }
+  .detail-hero   { height: 220px; }
+  .detail-title  { font-size: 22px; }
+  .calculator-header { flex-direction: column; align-items: flex-start; }
+  .detail-actions { gap: 8px; }
+  .action-btn { padding: 9px 16px; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .detail-hero   { height: 180px; }
+  .detail-title  { font-size: 20px; }
+  .detail-quick-item { padding: 10px 6px; }
+  .detail-quick-value { font-size: 13px; }
+  .share-modal   { padding: 20px 16px; }
+}
