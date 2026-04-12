@@ -4,23 +4,9 @@ saveurs est une applications web de recette de cuisine moderne développé en HT
 
 Application web développée à KEYCE Informatique par une équipe de 5 étudiants.
 
-<<<<<<< HEAD
-## ✨ Fonctionnalités
-- Recherche en temps réel (titre, ingrédients, tags)
-- Filtres par catégorie
-- Calculateur de portions automatique
-- Système de favoris (localStorage)
-- Mode sombre / clair
-- Thèmes
-- Commentaires
-- Export pdf et partage
-=======
-**Version 3.1 – Équipe **
-
 Projet réalisé dans le cadre du cours de Développement Web
 
 **KEYCE Informatique • Groupe de 5 étudiants • 2025-2026**
->>>>>>> d8851c5 (docs: mise à jour README pour équipe 5 et nouvelles branches)
 
 ## 🛠️ Technologies
 HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
@@ -29,13 +15,18 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 | Membre | Rôle |
 |--------|------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données, documentations du projet |
 | TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche, Calculateur , Favoris |
 | ABENA  ZE  ROSE  ALEXIA | Détail des recettes, PDF, Partage des recettes, Theme, commentaires |
 =======
 | AKWA TCHIO TAKODJOU DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
 | TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
+=======
+| AKWA TCHIO DEBORA  PRINCESSE | Chef de projet — Navbar, Hero, Données |
+>>>>>>> 76fb0ae (commit de correction de conflits dans le README)
 | ABENA  ZE  ROSE  ALEXIA | Détail, Calculateur, Favoris |
+| TCHUENTE  TAKODJOU  KRYS  HANDY | Cards, Filtres, Recherche |
 | WANDJI TCHAGANG TRAVIS | ajout fonctionnalites |
 | NTOLLO ELOUNDOU JOSUE VICTOIRE| ajout fonctionnalites |
 
@@ -52,7 +43,6 @@ HTML5 · CSS3 · JavaScript Vanilla · GitHub Pages
 - 💬 **Nouveau** : Commentaires + note étoilée + envoi email (EmailJS)
 - 🌙 **Nouveau** : Mode sombre/clair
 
->>>>>>> d8851c5 (docs: mise à jour README pour équipe 5 et nouvelles branches)
 
 ## 🚀 Lancer le projet
 ```bash
